@@ -3,6 +3,7 @@ def wordcount(book):
     return len(words)
 
 def sortdict(dict):
+    # Transforms a dictionary into a list of dictionaries and sorts it by value of entry
     def sort_on(d):
         return d["num"]
     
@@ -13,6 +14,7 @@ def sortdict(dict):
     return items
 
 def lettercount(book):
+    #gets the number of letters and sorts them from most to least
     letters={}
     for letter in book.lower():
         if letter.isalpha():
